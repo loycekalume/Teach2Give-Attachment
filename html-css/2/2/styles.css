@@ -1,12 +1,12 @@
 body{
     display :flex;
-    background-color: rgb(216, 174, 120);
+    background-color: rgb(197, 190, 180);
     justify-content: center;
 }
 .container{
     background-color: white;
     padding: 26px;
-   margin: 30px 24;
+   margin-top:30px;
    
 
 }
