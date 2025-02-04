@@ -1,0 +1,88 @@
+body{
+    display :flex;
+    background-color: rgb(216, 174, 120);
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    padding: 26px;
+   margin: 30px 24;
+   
+
+}
+nav{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.snap{
+    font-size:20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.features{
+    display:flex;
+    margin-left: 20px;
+}
+.features li{
+    margin-left:40px;
+}
+
+.login{
+    margin-right: 20px;
+    border:none ;
+    background-color: white;
+    margin-right: 40px;
+    margin-left: 320px;
+}
+
+.register{
+    border-radius: 27px;
+    padding: 4px 15px;
+    background-color: white;
+}
+.desktop img{
+    width:300px;
+    height:400px;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+.many{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:30px;
+    margin-top: 50px;
+    justify-content: space-between;
+   
+}
+.len{
+    margin-left: 50px;
+}
+.butt{
+    margin-top: 20px;
+    padding: 10px 20px;
+    color:white;
+    background-color: black;
+    border-radius: 8px;
+    border: none;
+    
+}
+
+.watch{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-right: 50px;
+    
+}
+.watch img{
+    width:44px;
+    /* height:40px; */
+    
+    
+}
