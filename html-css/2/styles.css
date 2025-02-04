@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family: "Outfit", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(207, 232, 253);
+    height:  100vh;  
+}
+
+
+.container{
+    background: linear-gradient(to bottom left, #ffffff, #d9e1e4,rgb(200, 200, 207)); 
+    font-family: "Outfit", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 250px;
+    height:400px;
+    
+    padding: 20px;
+    box-shadow: 
+        -5px 5px 15px rgba(0, 0, 0, 0.2),  
+        5px -5px 15px rgba(0, 0, 0, 0.2)
+    
+}
+p{
+    margin: 5px;
+}
+.one{
+    margin-bottom: 40px;
+    color:grey;
+    margin-bottom: 50px;
+}
+span{
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.icons{
+    display:flex;
+    list-style: none;
+    margin-bottom: 60px;    
+}
+.icons img {
+    width:24px;
+    margin-right: 20px;
+
+}
+.btn{
+    border-radius: 20px;
+    background-color: white;
+    border :white;
+    display: flex;
+    justify-content: center;
+    padding:10px 20px;
+    margin: bottom 1px; 
+    font-weight: 600;
+    font-family: "Outfit", serif;
+}
