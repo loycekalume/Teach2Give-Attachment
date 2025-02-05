@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
 body{
     display :flex;
     background-color: rgb(197, 190, 180);
     justify-content: center;
+    font-family:  "Outfit", serif;;
 }
 .container{
     background-color: white;
@@ -20,7 +23,10 @@ nav{
     margin-right: 10px;
     font-weight: bold;
 }
-
+h1{
+    font-weight: 500;
+    font-size: 50px;
+}
 
 .features{
     display:flex;
