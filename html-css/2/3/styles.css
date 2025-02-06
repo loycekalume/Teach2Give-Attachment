@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family:  "Outfit", serif;
+    background-color: white;
+
+}
+nav{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    padding:10px;
+    margin-bottom: 0px;
+}
+.aboutUs{
+    display:flex;
+    margin-left: 0px;
+    
+}
+.aboutUs li{
+    margin-right: 40px;
+}
+.logo{
+    margin-right: 0px;
+    width:100px;
+    margin-left: 200px;
+}
+.corner{
+    display: flex;
+    margin-left: 300px;
+    margin-right:40px
+  
+}
+.corner li{
+    margin-right: 40px;
+}
+.container{
+    display:flex;
+    margin-top: 20px;
+    list-style: none;
+    justify-content: space-between;
+}
+.container1{
+    /* display:flex; */
+    margin-left:220px;
+    /* border:1px solid black; */
+    background-color:rgb(236, 244, 250);
+    border-radius: 8px;
+   padding:10px 40px;
+   width:420px;
+   height: 490px;
+}
+ .account{
+    padding :20px;
+    display: flex;
+}
+.account li{
+    margin-right: 20px;
+}
+.account1{
+    padding:20px;
+}
+.container2{
+    background-color:rgb(236, 244, 250);
+   padding:20px;
+   margin-right: 150px;
+   border-radius: 8px;
+   padding-top:10px ;
+   width:350px;
+   height:px;
+
+}
+h4{
+    justify-content: flex-start;
+}
+button{
+   margin-left: 61px;
+   
+}
+.register,.order{
+
+    border:none;
+    background-color:rgb(236, 244, 250);
+}
+.login,.details{
+    background-color:rgb(28, 148, 240);
+    border-radius: 5px ;
+    padding:15px 35px;
+    border:rgb(28, 148, 240);
+    margin-left: 40px;
+   
+}
+.logins{
+    /* justify-content: space-between; */
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+hr{
+    margin-bottom: 20px;
+    height:2px;
+    color:white
+    
+}
+.orderdetails{
+    margin-bottom: 60px;
+}
+
+.item {
+    display: flex;                      /* Enables Flexbox */
+    justify-content: space-between;     /* Aligns item & price at opposite ends */
+    align-items: center;                /* Vertically centers the content */
+    margin-bottom: 8px;                 /* Adds spacing between items */
+    padding: 5px 0;                     /* Optional spacing for better layout */
+}
+
+.type, .price {
+    margin: 0;                          /* Removes default margins */
+    padding: 0;                         /* Removes default padding */
+    font-size: 16px;                    /* Adjusts font size */
+    font-weight: 500;                   /* Slightly bolder text */
+}
+  
+  
+ .container2 img{
+    width:340px;
+    height:150px;
+    padding-right: 10px;
+  }
+  input{
+    background-color:rgb(230, 231, 231);
+    border: rgb(250, 245, 245);
+    padding: 10px 85px;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-left: 5px;
+    
+  }
+  nav img{
+    width:44px;
+    height:34px;
+  }
+.container1 img{
+    width:15px;
+    height:15px;
+    margin-left: 5px;
+    padding: 3px;
+   
+   
+}
