@@ -9,7 +9,7 @@ nav{
     display:flex;
     list-style: none;
     justify-content: space-between;
-    padding:10px;
+    padding:px;
     margin-bottom: 0px;
 }
 .aboutUs{
@@ -63,7 +63,7 @@ nav{
 .container2{
     background-color:rgb(236, 244, 250);
    padding:20px;
-   margin-right: 150px;
+   margin-right: 200px;
    border-radius: 8px;
    padding-top:10px ;
    width:350px;
