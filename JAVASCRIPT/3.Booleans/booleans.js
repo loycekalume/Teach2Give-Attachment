@@ -40,7 +40,7 @@ async function processWithdrawal(user, inputPassword, inputMfaCode, withdrawalAm
     return `Transaction Successful! New Balance: ${user.balance}`;
 }
 
-// Example Usage
+// test case
 (async () => {
     const user = {
         hashedPassword: await bcrypt.hash("securePassword", 10), // Simulated hashed password
@@ -101,14 +101,14 @@ async function processWithdrawal(user, inputPassword, inputMfaCode, withdrawalAm
 // If you were to add extra features, such as fraud detection (e.g., detecting
 // abnormal withdrawal patterns), how would you go about doing this? What
 // additional data would you track to detect fraud
-// Steps to Detect Fraud:
 
+// Steps to Detect Fraud:
 // Track withdrawal history: Detect sudden spikes in withdrawals.
 // Monitor device and location: If a transaction is requested from a new device or unusual location, trigger additional verification.
 // Set withdrawal frequency limits: Limit the number of withdrawals per day/hour.
 // Use machine learning models: Identify anomalies in spending behavior.
-// Additional Data to Track:
 
+// Additional Data to Track:
 // Geolocation Data: Unusual logins from a different country.
 // Device ID & IP Address: Detect logins from unrecognized devices.
 // Time of Transaction: Multiple withdrawals in a short time may indicate fraud.
