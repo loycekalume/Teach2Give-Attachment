@@ -49,11 +49,11 @@ const user = {
 };
 
 // Test different scenarios
-console.log(processWithdrawal(user, "securePassword", "123456", 400)); // ✅ Success
-console.log(processWithdrawal(user, "wrongPassword", "123456", 400));  // ❌ Incorrect password
-console.log(processWithdrawal(user, "securePassword", "654321", 400)); // ❌ MFA failed
-console.log(processWithdrawal(user, "securePassword", "123456", 1200)); // ❌ Insufficient balance
-console.log(processWithdrawal(user, "securePassword", "123456", 600));  // ❌ Exceeds daily limit
+console.log(processWithdrawal(user, "securePassword", "123456", 400)); //  Success
+console.log(processWithdrawal(user, "wrongPassword", "123456", 400));  //  Incorrect password
+console.log(processWithdrawal(user, "securePassword", "654321", 400)); //  MFA failed
+console.log(processWithdrawal(user, "securePassword", "123456", 1200)); //  Insufficient balance
+console.log(processWithdrawal(user, "securePassword", "123456", 600));  //  Exceeds daily limit
 
 
 
