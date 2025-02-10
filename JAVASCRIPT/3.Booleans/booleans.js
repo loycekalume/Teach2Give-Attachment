@@ -1,8 +1,8 @@
 import bcrypt from 'bcrypt';
 
-// Function to verify password
-async function verifyPassword(inputPassword, storedHashedPassword) {
-    return await bcrypt.compare(inputPassword, storedHashedPassword);
+// Function to verify password (synchronous)
+function verifyPassword(inputPassword, storedHashedPassword) {
+    return bcrypt.compareSync(inputPassword, storedHashedPassword);
 }
 
 // Function to verify MFA code
@@ -20,9 +20,9 @@ function checkDailyLimit(withdrawalAmount, dailyLimit) {
     return withdrawalAmount <= dailyLimit;
 }
 
-// Main withdrawal process
-async function processWithdrawal(user, inputPassword, inputMfaCode, withdrawalAmount) {
-    if (!(await verifyPassword(inputPassword, user.hashedPassword))) {
+// Main withdrawal process (fully synchronous)
+function processWithdrawal(user, inputPassword, inputMfaCode, withdrawalAmount) {
+    if (!verifyPassword(inputPassword, user.hashedPassword)) {
         return "Transaction Failed: Incorrect password.";
     }
     if (!verifyMFA(inputMfaCode, user.correctMfaCode)) {
@@ -40,21 +40,21 @@ async function processWithdrawal(user, inputPassword, inputMfaCode, withdrawalAm
     return `Transaction Successful! New Balance: ${user.balance}`;
 }
 
-// test case
-(async () => {
-    const user = {
-        hashedPassword: await bcrypt.hash("securePassword", 10), // Simulated hashed password
-        correctMfaCode: "123456",
-        balance: 1000,
-        dailyLimit: 500
-    };
+// Example Usage
+const user = {
+    hashedPassword: bcrypt.hashSync("securePassword", 10), // Synchronously hashed password
+    correctMfaCode: "123456",
+    balance: 1000,
+    dailyLimit: 500
+};
 
-    console.log(await processWithdrawal(user, "securePassword", "123456", 400)); //  Success
-    console.log(await processWithdrawal(user, "wrongPassword", "123456", 400));  //  Incorrect password
-    console.log(await processWithdrawal(user, "securePassword", "654321", 400)); //  MFA failed
-    console.log(await processWithdrawal(user, "securePassword", "123456", 1200)); //  Insufficient balance
-    console.log(await processWithdrawal(user, "securePassword", "123456", 600));  //  Exceeds daily limit
-})();
+// Test different scenarios
+console.log(processWithdrawal(user, "securePassword", "123456", 400)); // ✅ Success
+console.log(processWithdrawal(user, "wrongPassword", "123456", 400));  // ❌ Incorrect password
+console.log(processWithdrawal(user, "securePassword", "654321", 400)); // ❌ MFA failed
+console.log(processWithdrawal(user, "securePassword", "123456", 1200)); // ❌ Insufficient balance
+console.log(processWithdrawal(user, "securePassword", "123456", 600));  // ❌ Exceeds daily limit
+
 
 
 
