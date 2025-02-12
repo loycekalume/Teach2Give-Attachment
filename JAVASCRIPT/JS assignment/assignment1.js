@@ -44,9 +44,8 @@ function longestPalindromicSubstring(s) {
 } 
     // Test Cases 
     console.log(longestPalindromicSubstring('babad')); 
-    // Output: 'bab' or 'aba' 
     console.log(longestPalindromicSubstring('cbbd')); 
-    // Output: 'bb'
+   
 
 
 // 4. Check if Two Strings are Anagrams

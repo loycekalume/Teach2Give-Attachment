@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+#display {
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    border: none;
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.delete {
+    background: #f39c12;  
+    color: white;
+}
+.delete:hover {
+    background: #e67e22;  
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.btn {
+    padding: 20px;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #ccc;
+}
+.operator {
+    background: #f39c12;
+    color: white;
+}
+.operator:hover {
+    background: #e67e22;
+}
+.equal {
+    background: #007bff;
+    color: white;
+    grid-column: span 1;
+}
+.equal:hover {
+    background: #0056b3;
+}
+.clear {
+    background: #e74c3c;
+    color: white;
+}
+.clear:hover {
+    background: #c0392b;
+}

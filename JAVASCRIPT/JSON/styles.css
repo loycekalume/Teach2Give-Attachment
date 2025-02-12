@@ -1,0 +1,61 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading style */
+h1 {
+    background-color: #0e2c4b;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Product container */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual product card */
+.product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product title */
+.product h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Product details */
+.product p {
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Price styling */
+.product p strong {
+    color: #99bce2;
+    font-weight: bold;
+}
