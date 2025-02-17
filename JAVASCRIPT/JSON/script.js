@@ -10,13 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 const productDiv = document.createElement("div");
                 productDiv.classList.add("product");
 
+                // Ensure price is a valid number before using .toFixed(2)
+                const formattedPrice = typeof product.price === "number" ? product.price.toFixed(2) : "N/A";
+
                 // Populate product details
                 productDiv.innerHTML = `
                     <h2>${product.name}</h2>
-                       <p><strong>Id:</strong> ${product.id}</p>
-                    <p><strong>Category:</strong> ${product.category}</p>
+                    <p><strong>Id:</strong> ${product.id}</p>
+                    <p><strong>Category:</strong> ${product.category}</p>  
                     <p><strong>Description:</strong> ${product.description}</p>
-                    <p><strong>Price:</strong> $${product.price.toFixed(2)}</p>
+                    <p><strong>Price:</strong> $${formattedPrice}</p>
                     <p><strong>Stock:</strong> ${product.stock}</p>
                 `;
 
