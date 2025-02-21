@@ -1,0 +1,22 @@
+{
+  "name": "asynchronousjs",
+  "version": "1.0.0",
+  "main": "callback.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon callback.js",
+    "dev-start": "nodemon promises.js",
+    "dev-run": "nodemon async_await.js",  
+    "dev-smart":"nodemon Assignment.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "nodemon": "^3.1.9"
+  }
+}
