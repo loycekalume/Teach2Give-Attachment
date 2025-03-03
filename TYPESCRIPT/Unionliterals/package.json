@@ -1,0 +1,28 @@
+{
+  "name": "unionliterals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "dev:start": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@total-typescript/helpers": "^0.0.1",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jsdom": "^26.0.0",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.7.3"
+  }
+}
