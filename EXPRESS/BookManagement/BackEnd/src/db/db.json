@@ -1,5 +1,4 @@
-{
-    "books": [
+ [
         {
             "id": 1,
             "title": "To Kill a Mockingbird",
@@ -66,8 +65,8 @@
             "author": "J.R.R. Tolkien",
             "genre": "Fantasy",
             "year": 1937,
-            "pages": 256,
             "price": 14.99,
+            "pages": 450,
             "publisher": "George Allen & Unwin",
             "description": "A fantasy novel about the adventures of Bilbo Baggins, a hobbit, who sets out on a quest to win a share of a dragon's treasure.",
             "image": "https://m.media-amazon.com/images/I/91b0C2YNSrL.jpg"
@@ -121,4 +120,3 @@
             "price": 16.99
         }
     ]
-}
